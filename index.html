@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+
+<style type="text/css">
+body {
+  background: #e6e6e6; /* Cambiado a un color gris claro */
+  margin: 0;
+  font-family: 'Cursive', serif; /* Cambiado a un estilo más romántico */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#magazine {
+  width: 1152px;
+  height: 752px;
+  margin: auto;
+}
+
+#magazine .turn-page {
+  background-color: #fff;
+  background-size: cover;
+}
+
+.turn-page .portada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #2d3c2d;
+  color: #fff;
+  text-align: center;
+  border: 15px solid #000; /* Cambiado a negro */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  box-sizing: border-box; /* Asegura que el borde se vea completo */
+}
+
+.portada h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive; /* Cambiado a un tipo de letra romántico */
+}
+
+.video-container {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  bottom: 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2d3c2d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3e4d3e;
+}
+
+.music-player {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2d3c2d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.music-player button {
+  margin: 5px 0;
+  width: 100%;
+}
+
+.volume-control {
+  margin-top: 10px;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<div id="magazine">
+  <div class="turn-page">
+    <div class="portada">
+      <h1>Capítulos de Amor y Aventura: 
+Nuestro 2024 Juntos ❤</h1>
+      <div class="video-container">
+        <video controls autoplay>
+          <source src="./Albun/portada.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="turn-page" style="background-image:url(./Fotos/1.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/2.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/3.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/4.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/5.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/6.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/7.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/8.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/9.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/10.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/11.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/12.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/13.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/14.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/15.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/16.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/17.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/18.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/19.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/20.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/21.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/22.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/23.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/24.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/25.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/26.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/27.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/28.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/29.jpg);"></div>
+  <div class="turn-page" style="background-image:url(./Fotos/30.jpg);"></div>
+</div>
+
+<div class="controls">
+  <button id="prev-page">Página Anterior</button>
+  <button id="next-page">Página Siguiente</button>
+</div>
+
+<div class="music-player">
+  <button id="play">Play</button>
+  <button id="pause">Pause</button>
+  <button id="next">Siguiente</button>
+  <button id="prev">Anterior</button>
+  <input id="volume" class="volume-control" type="range" min="0" max="1" step="0.01" value="0.5">
+</div>
+
+<script type="text/javascript">
+  $(window).ready(function() {
+    $('#magazine').turn({
+      display: 'double',
+      acceleration: true,
+      gradients: !$.isTouch,
+      elevation: 50,
+      when: {
+        turned: function(e, page) {
+          /*console.log('Current view: ', $(this).turn('view'));*/
+        }
+      }
+    });
+
+    $('#prev-page').click(function() {
+      $('#magazine').turn('previous');
+    });
+
+    $('#next-page').click(function() {
+      $('#magazine').turn('next');
+    });
+  });
+
+  $(window).bind('keydown', function(e) {
+    if (e.keyCode == 37)
+      $('#magazine').turn('previous');
+    else if (e.keyCode == 39)
+      $('#magazine').turn('next');
+  });
+
+  const audioFiles = ["./Musica/2.mp3", "./Musica/3.mp3", "./Musica/4.mp3"];
+  let currentTrack = 0;
+  const audio = new Audio(audioFiles[currentTrack]);
+
+  document.getElementById('play').addEventListener('click', () => {
+    audio.play();
+  });
+
+  document.getElementById('pause').addEventListener('click', () => {
+    audio.pause();
+  });
+
+  document.getElementById('next').addEventListener('click', () => {
+    currentTrack = (currentTrack + 1) % audioFiles.length;
+    audio.src = audioFiles[currentTrack];
+    audio.play();
+  });
+
+  document.getElementById('prev').addEventListener('click', () => {
+    currentTrack = (currentTrack - 1 + audioFiles.length) % audioFiles.length;
+    audio.src = audioFiles[currentTrack];
+    audio.play();
+  });
+
+  document.getElementById('volume').addEventListener('input', (event) => {
+    audio.volume = event.target.value;
+  });
+</script>
+
+</body>
+</html>
